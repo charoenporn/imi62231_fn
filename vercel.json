@@ -1,11 +1,11 @@
 {
     "version":2,
     "builds": [{
-        "src":"server.json",
-        "use":"@now/node"
+        "src":"index.json",
+        "use":"@vercel/node"
     }],
     "routes":[{
         "src":"/(.*)",
-        "dest":"server.json"
+        "dest":"index.json"
     }]
 }
